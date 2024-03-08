@@ -1,0 +1,35 @@
+{
+    "$id": "general-schema.json",
+    "title": "Todo",
+    "description": "A todo to be updated in the todo list",
+    "type": "object",
+    "properties": {
+        "id": {
+            "description": "Id of the todo",
+            "type": "number"
+        },
+        "title": {
+            "description": "Title of the todo",
+            "type": "string"
+        },
+        "description": {
+            "description": "Description of the todo",
+            "type": "string"
+        },
+        "username": {
+            "description": "Name of the user having the todo",
+            "type": "string"
+        },
+        "image": {
+            "description": "base64 encoded image of the user/todo",
+            "type": "string",
+            "pattern": "^data:image\/(jpeg|png);base64,([A-Za-z0-9+/=]+)$"
+        },
+        "lastEdited": {
+            "description": "Lst time the todo was edited",
+            "type": "string",
+            "format": "date-time"
+        }
+    },
+    "required": ["id", "title", "description", "username"]
+}

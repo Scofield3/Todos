@@ -1,0 +1,13 @@
+{
+    "$id": "read-delete-schema.json",
+    "title": "Todo",
+    "description": "A todo to be read or delete from the todo list",
+    "type": "object",
+    "properties": {
+        "id": {
+            "description": "Id of the todo",
+            "type": "number"
+        }
+    },
+    "required": ["id"]
+}
