@@ -1,6 +1,6 @@
 const config = {
     preset: "jest-puppeteer",
-    verbose: true,
+    verbose: true
   };
   
 module.exports = config;
